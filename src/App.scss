@@ -1,0 +1,127 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+  color: #4062ff;
+  text-align: center;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+  transform: translateY(50%);
+}
+.form {
+  max-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 19px 16px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    &::placeholder {
+      color: rgba(111, 111, 111, 0.3);
+    }
+  }
+  label {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0 4px 0;
+  }
+  span {
+    display: inline-block;
+    margin: 5px 0 20px 0;
+  }
+  button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 0;
+    background: linear-gradient(
+      90deg,
+      #3aa0ff 0%,
+      #137cf9 52.76%,
+      #0152f9 103.37%
+    );
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+}
+.home {
+  padding: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 38px;
+    margin-bottom: 40px;
+    background: linear-gradient(
+      90deg,
+      #3aa0ff 0%,
+      #137cf9 52.76%,
+      #0152f9 103.37%
+    );
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  .player {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .video {
+    height: 600px;
+  }
+}
+
+@media (max-width: 960px) {
+  .home {
+    padding: 50px;
+    button {
+      margin-bottom: 100px;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .home {
+    padding: 20px;
+  }
+}
+@media (max-width: 420px) {
+  h1 {
+    font-size: 38px;
+  }
+  .form {
+    max-width: 270px;
+    input {
+      padding: 14px 12px;
+    }
+    label {
+      font-size: 12px;
+    }
+  }
+}
